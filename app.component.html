@@ -1,0 +1,31 @@
+<head>
+<style>
+body {
+  background-image: url(https://as2.ftcdn.net/jpg/07/13/36/81/1000_F_713368135_44mzFZZBzydbWJ1W4LK1iRDwZTObqyYl.webp);
+}
+</style>
+</head>
+<body>
+
+<div class="cricket-scorer-container">
+<h1 style="color:red;font-weight:bold;text-align: center">Cricket Score Monitor</h1>
+
+<div class="score-inputs">
+  <label style="color:maroon;font-weight:bold">Overs: <input type="number" [(ngModel)]="oversLeft" disabled></label>
+  <label style="color:maroon;font-weight:bold">Balls: <input type="number" [(ngModel)]="ballsLeft" disabled></label>
+  <label style="color:maroon;font-weight:bold">Wickets: <input type="number" [(ngModel)]="wicketsLeft" disabled></label>
+  <label style="color:maroon;font-weight:bold">Target: <input type="number" [(ngModel)]="target" (change)="updateNeed()"></label>
+  <label style="color:maroon;font-weight:bold">Current Runs: <input type="number" [(ngModel)]="currentRuns" disabled></label>
+  <label style="color:maroon;font-weight:bold">Need: <input type="number" [(ngModel)]="runsNeeded" disabled></label>
+</div>
+
+<div class="controls">
+  <button (click)="handleRun(0)" style="color:blue;font-weight:bold">0 Run</button>
+  <button (click)="handleRun(1)" style="color:blue;font-weight:bold">1 Run</button>
+  <button (click)="handleRun(2)" style="color:blue;font-weight:bold">2 Runs</button>
+  <button (click)="handleRun(3)" style="color:blue;font-weight:bold">3 Runs</button>
+  <button (click)="handleRun(4)" style="color:blue;font-weight:bold">4 Runs</button>
+  <button (click)="handleRun(6)" style="color:blue;font-weight:bold">6 Runs</button>
+ 
+</div>
+</div>
